@@ -28,16 +28,17 @@
         <item>21</item>
     </string-array>
     <string-array name="artists">
-        <item>Queen</item>
-        <item>Led Zeppelin</item>
-        <item>Pink Floyd</item>
-        <item>David Bowie</item>
-        <item>ABBA</item>
-        <item>Prince</item>
-        <item>Madonna</item>
-        <item>Bruce Springsteen</item>
-        <item>U2</item>
-        <item>Bob Dylan</item>
+    <item>Select artist</item>
+    <item>Queen</item>
+    <item>Led Zeppelin</item>
+    <item>Pink Floyd</item>
+    <item>David Bowie</item>
+    <item>ABBA</item>
+    <item>Prince</item>
+    <item>Madonna</item>
+    <item>Bruce Springsteen</item>
+    <item>U2</item>
+    <item>Bob Dylan</item>
     </string-array>
     <string-array name="sizes">
         <item>4</item>

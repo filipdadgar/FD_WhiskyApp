@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 			val prices = resources.getStringArray(R.array.prices)
 			val artists = resources.getStringArray(R.array.artists)
 			val sizes = resources.getStringArray(R.array.sizes)
-			if (whiskyIndex > 0) {
+			if (whiskyIndex > 0 && artistIndex > 0) {
 				val whisky = whiskies[whiskyIndex]
 				val pricePerCl = prices[whiskyIndex].toInt()
 				val artist = artists[artistIndex]
