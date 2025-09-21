@@ -40,3 +40,4 @@ __MACOSX/
 .externalNativeBuild
 .cxx
 local.properties
+/.kotlin/
