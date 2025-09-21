@@ -1,3 +1,30 @@
+# Android/IntelliJ
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+app/build/
+*.iml
+*.apk
+*.ap_*
+*.dex
+*.class
+*.log
+*.hprof
+*.swp
+*.swo
+*.tmp
+*.orig
+*.rej
+*.bak
+*.keystore
+captures/
+output.json
+# MacOS
+__MACOSX/
+# VSCode
+.vscode/
 *.iml
 .gradle
 /local.properties
