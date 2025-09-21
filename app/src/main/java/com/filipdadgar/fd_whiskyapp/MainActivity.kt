@@ -53,11 +53,13 @@ class MainActivity : AppCompatActivity() {
 				val sizeCl = sizes[sizeIndex].toInt()
 				val totalPrice = pricePerCl * sizeCl
 				binding.resultTextView.text = "Du har valt $whisky.\nPris per cl: $pricePerCl kr.\nStorlek: $sizeCl cl.\nTotalpris: $totalPrice kr.\nArtist: $artist."
-				// Set images if available
-				val whiskyImageRes = resources.getIdentifier("whisky_${whiskyIndex}", "drawable", packageName)
+				// Convert names to valid resource names
+				val whiskyResName = whisky.lowercase().replace(" ", "_").replace("-", "_")
+				val artistResName = artist.lowercase().replace(" ", "_").replace("-", "_")
+				val whiskyImageRes = resources.getIdentifier(whiskyResName, "drawable", packageName)
 				if (whiskyImageRes != 0) binding.whiskyImageView.setImageResource(whiskyImageRes)
 				else binding.whiskyImageView.setImageDrawable(null)
-				val artistImageRes = resources.getIdentifier("artist_${artistIndex}", "drawable", packageName)
+				val artistImageRes = resources.getIdentifier(artistResName, "drawable", packageName)
 				if (artistImageRes != 0) binding.artistImageView.setImageResource(artistImageRes)
 				else binding.artistImageView.setImageDrawable(null)
 			} else {
