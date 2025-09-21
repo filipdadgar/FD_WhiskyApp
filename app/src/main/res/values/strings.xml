@@ -3,6 +3,7 @@
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">Favorite Whisky</string>
     <string name="printText">Please choose your favourite whisky.</string>
+    <string name="footer_label">v1.0 • by Filip Dadgar</string>
     <string-array name="whiskies">
         <item >Select whisky</item>
         <item >Lagavulin</item>
