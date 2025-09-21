@@ -32,7 +32,7 @@
         android:layout_marginTop="8dp"/>
 
     <TextView
-        android:id="@+id/resultTextView"
+        android:id="@+id/resultTextViewStyled"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/sizeSpinner"
@@ -43,6 +43,23 @@
         android:textSize="16sp"
         android:textAlignment="center"/>
 
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sizeSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/textPrimary"
+        android:textSize="16sp"
+        android:background="@color/backgroundCard"
+        android:padding="16dp"
+        android:elevation="4dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintWidth_percent="0.9"/>
+
     <ImageView
         android:id="@+id/whiskyImageView"
         android:layout_width="0dp"
@@ -50,15 +67,24 @@
         app:layout_constraintTop_toBottomOf="@id/resultTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/artistImageView"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintBottom_toTopOf="@id/footer_label"
         app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
         android:scaleType="centerCrop"
-        android:contentDescription="Whisky"/>
+        android:contentDescription="Whisky" />
 
     <ImageView
         android:id="@+id/artistImageView"
         android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/resultTextView"
+        app:layout_constraintStart_toEndOf="@id/whiskyImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/footer_label"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.3"
+        android:scaleType="centerCrop"
+        android:contentDescription="Artist" />
         android:layout_height="0dp"
         app:layout_constraintTop_toBottomOf="@id/resultTextView"
         app:layout_constraintStart_toEndOf="@id/whiskyImageView"
@@ -75,10 +101,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="36dp"
         android:text="@string/footer_label"
-        android:textColor="@android:color/black"
+        android:textColor="@color/footerText"
         android:textSize="14sp"
         android:textStyle="bold"
-        android:background="@android:color/white"
+        android:background="@color/footerBg"
         android:elevation="8dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
